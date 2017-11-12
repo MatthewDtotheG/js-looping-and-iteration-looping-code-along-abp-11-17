@@ -7,12 +7,8 @@ function printBadges(arr) {
 }
 
 
-let count = 0;
-let coin = Math.random();
 
-function tailsNeverFails() {
-  while ( coin >= 0.5) {
-    
-    count++
+function coinToss() {
+  return Math.random() >= 0.5;
 }
-return `You got ${count} tails in a row!`;
+
