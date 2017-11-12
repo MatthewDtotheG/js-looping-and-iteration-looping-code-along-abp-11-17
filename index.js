@@ -10,10 +10,11 @@ function coinToss() {
   return Math.random() >= 0.5;
 }
 
-function tailsNeverFails(){
+function tailsNeverFails() {
   let counter = 0;
-  while(coinToss()){
-    counter++
+  while (coinToss("Tails!!!")) {
+    counter++;
   }
-  console.log(`You got ${counter} tails in a row!`)
+  console.log("Heads!!!")
+  console.log(`You got ${counter} tails in a row!`);
 }
